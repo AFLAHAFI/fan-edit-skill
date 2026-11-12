@@ -1,0 +1,119 @@
+{
+ "title": "Veera x Iron Man (lyric mass edit)",
+ "song": {
+  "start": 65.0,
+  "duration": 38.0
+ },
+ "output": {
+  "aspect": "16:9",
+  "fps": 30,
+  "crf": 14,
+  "name": "VEERA_IronMan_1080p.mp4"
+ },
+ "style": {
+  "grade": "teal-orange",
+  "impact_font": "anton",
+  "lead_font": "playfair-italic",
+  "lead_color": "white",
+  "zoom": 1.0,
+  "shake": 1.0,
+  "flash": 1.0,
+  "grid": 1.0,
+  "hit_flash_color": "#FFB020"
+ },
+ "hud": {
+  "enabled": true,
+  "title": "VEERA",
+  "sub": "ARC REACTOR  //  ONLINE",
+  "br": "126 BPM",
+  "accent": "#FFC83C"
+ },
+ "sections": [
+  [
+   0.0,
+   6.44,
+   "groove"
+  ],
+  [
+   6.44,
+   7.85,
+   "break"
+  ],
+  [
+   7.85,
+   14.92,
+   "drop"
+  ],
+  [
+   14.92,
+   15.87,
+   "break"
+  ],
+  [
+   15.87,
+   21.07,
+   "groove"
+  ],
+  [
+   21.07,
+   23.42,
+   "break"
+  ],
+  [
+   23.42,
+   36.66,
+   "drop"
+  ],
+  [
+   36.66,
+   38.0,
+   "outro"
+  ]
+ ],
+ "hits": [
+  8.32,
+  15.87,
+  23.42
+ ],
+ "cues": [
+  {
+   "lead": "veezha",
+   "lead_t": 6.35,
+   "word": "VEERA",
+   "t": 7.85,
+   "end": 11.45,
+   "color": "gold",
+   "grid": true
+  },
+  {
+   "lead": "theeyaai",
+   "lead_t": 11.62,
+   "word": "ERIYUM",
+   "t": 12.25,
+   "end": 12.85,
+   "color": "red"
+  },
+  {
+   "word": "OMKAARA",
+   "t": 12.88,
+   "end": 14.9,
+   "color": "gold",
+   "grid": true
+  },
+  {
+   "lead": "sigarathil",
+   "lead_t": 17.48,
+   "word": "ASURAA",
+   "t": 21.25,
+   "end": 23.42,
+   "color": "red",
+   "grid": true
+  },
+  {
+   "word": "VEERA",
+   "t": 36.18,
+   "end": 38.0,
+   "color": "cyan"
+  }
+ ]
+}

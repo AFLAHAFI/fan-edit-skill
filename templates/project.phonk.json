@@ -1,0 +1,115 @@
+{
+ "title": "Metamorphosis x Spider-Man (phonk)",
+ "song": {
+  "start": 50.0,
+  "duration": 38.0
+ },
+ "output": {
+  "aspect": "16:9",
+  "fps": 30,
+  "crf": 14,
+  "name": "METAMORPHOSIS_SpiderMan_1080p.mp4"
+ },
+ "style": {
+  "grade": "phonk-night",
+  "impact_font": "russo-one",
+  "lead_font": "instrument-serif",
+  "lead_color": "white",
+  "shake": 1.0,
+  "zoom": 1.0,
+  "flash": 1.0,
+  "grid": 1.0,
+  "hit_flash_color": "#E61E28"
+ },
+ "hud": {
+  "enabled": false
+ },
+ "sections": [
+  [
+   0.0,
+   4.881,
+   "intro"
+  ],
+  [
+   4.881,
+   15.84,
+   "drop"
+  ],
+  [
+   15.84,
+   26.8,
+   "groove"
+  ],
+  [
+   26.8,
+   37.52,
+   "drop"
+  ],
+  [
+   37.52,
+   38.0,
+   "outro"
+  ]
+ ],
+ "hits": [
+  4.881,
+  6.953,
+  12.432,
+  17.91,
+  23.389,
+  28.868,
+  34.346
+ ],
+ "cues": [
+  {
+   "lead": "the",
+   "lead_t": 2.4,
+   "word": "AMAZING",
+   "t": 4.881,
+   "end": 6.9,
+   "color": "white",
+   "grid": true
+  },
+  {
+   "lead": "your friendly",
+   "lead_t": 10.7,
+   "word": "SPIDER-MAN",
+   "t": 12.432,
+   "end": 14.6,
+   "color": "red",
+   "grid": true
+  },
+  {
+   "lead": "spidey",
+   "lead_t": 16.5,
+   "word": "SENSE",
+   "t": 17.91,
+   "end": 19.7,
+   "color": "blue"
+  },
+  {
+   "lead": "with great",
+   "lead_t": 21.7,
+   "word": "POWER",
+   "t": 23.389,
+   "end": 25.5,
+   "color": "white",
+   "grid": true
+  },
+  {
+   "lead": "web",
+   "lead_t": 27.5,
+   "word": "SLINGER",
+   "t": 28.868,
+   "end": 30.6,
+   "color": "red"
+  },
+  {
+   "word": "METAMORPHOSIS",
+   "t": 34.346,
+   "end": 37.7,
+   "color": "blue",
+   "grid": true
+  }
+ ]
+}
