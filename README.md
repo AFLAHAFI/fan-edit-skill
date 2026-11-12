@@ -26,6 +26,16 @@ Presets and intensity knobs: [`references/styles.md`](references/styles.md).
 3. `pip install -r C:\mass-fan-edit\templates\requirements.txt`
 4. Add the skill to Claude: zip the repo folder and upload it under *Settings → Capabilities → Skills* (claude.ai), or copy the folder to `~/.claude/skills/mass-fan-edit` (Claude Code).
 
+## How to use (3 ways)
+
+| Way | You do | Claude does | Quality |
+|---|---|---|---|
+| **1. Full auto with Claude** (Claude Code / desktop app with your folder connected) | give the folder + a short prompt (`PROMPT.md`) | everything: song window, words, picks every shot, renders the MP4 | best |
+| **2. Low-limit / free** (claude.ai chat) | run `PREP.bat`, upload the 3 small reports, save 2 JSON files, run `RUN_EDIT.bat` | reads reports + sheets, writes `project.json` + `picks.json` | best |
+| **3. One click, no Claude** | set 4 lines in `AUTO_EDIT.bat` (preset, aspect, words), double-click | nothing | good (auto-picked shots) |
+
+Example prompt for way 1: *"Use the mass-fan-edit skill. Folder D:\edits\batman (raw\ clips, song\ song). 38 s 9:16 phonk edit, words: the/DARK, KNIGHT, VENGEANCE. Heavy graphics. Render it."*
+
 ## Quick start
 ```
 D:\edits\myedit\
@@ -45,9 +55,9 @@ If Claude can reach your folder (Claude Code / desktop app), it runs all of this
 SKILL.md                 master instructions Claude reads first (short)
 PROMPT.md                prompt template + examples (English + Malayalam guide)
 references/              fonts.md, styles.md, techniques.md, project-schema.md, workflow.md
-scripts/                 analyze_song.py, make_sheets.py, massedit.py, verify_picks.py, font_previews.py
+scripts/                 analyze_song.py, make_sheets.py, auto_project.py, massedit.py, verify_picks.py, font_previews.py
 fonts/                   22 fonts + fonts.json registry + licenses/
-templates/               PREP.bat, RUN_EDIT.bat, project.example.json (lyric mass), project.phonk.json, requirements.txt
+templates/               PREP.bat, RUN_EDIT.bat, AUTO_EDIT.bat, project.example.json (lyric mass), project.phonk.json, requirements.txt
 assets/                  face detector for auto-scan
 docs/                    preview images
 ```

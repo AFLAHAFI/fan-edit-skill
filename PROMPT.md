@@ -105,9 +105,15 @@ Use the mass-fan-edit skill: 35 s 9:16 phonk edit of the clips in D:\edits\batma
 
 ---
 
+### No Claude at all
+Open `templates\AUTO_EDIT.bat`, set `PRESET`, `ASPECT`, `WORDS` (e.g. `the/AMAZING,SPIDER-MAN,POWER`), copy it into your project folder, double-click.
+
 ### Malayalam quick guide (മലയാളം)
 1. `raw\` ഫോൾഡറിൽ ക്ലിപ്പുകൾ, `song\`-ൽ പാട്ട് ഇടുക.
 2. `PREP.bat` റൺ ചെയ്യുക → `song_report.txt`, `video_report.txt`, `sheets\` ചിത്രങ്ങൾ ഉണ്ടാകും.
 3. മുകളിലെ ടെംപ്ലേറ്റ് പൂരിപ്പിച്ച്, ആ ഫയലുകൾ കൂടെ Claude-ന് അയക്കുക.
 4. Claude തരുന്ന `project.json`, `picks.json` ഫോൾഡറിൽ സേവ് ചെയ്യുക.
 5. `RUN_EDIT.bat` റൺ ചെയ്യുക → ഫൈനൽ വീഡിയോ.
+
+Claude Code / desktop app-ൽ ഫോൾഡർ കണക്റ്റ് ചെയ്താൽ: ഫോൾഡറും ചെറിയ prompt-ഉം കൊടുത്താൽ മതി, Claude തന്നെ എല്ലാം ചെയ്ത് വീഡിയോ ഉണ്ടാക്കും.
+Claude ഇല്ലാതെ: `AUTO_EDIT.bat`-ൽ PRESET, ASPECT, WORDS മാറ്റി double-click ചെയ്യുക.

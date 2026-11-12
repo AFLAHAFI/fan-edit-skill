@@ -17,6 +17,12 @@ Read only what you need, in this order. Each file is small on purpose.
 | Every project.json field | `references/project-schema.md` |
 | Low-limit / free-plan flow, troubleshooting | `references/workflow.md` |
 
+## Mode rule (decide first, do not ask)
+
+- **You can run code AND reach the clips + song** (Claude Code, desktop app with the folder connected, or small files uploaded): run the whole pipeline yourself - analyze, sheets, project.json, picks.json, verify, render - and hand over the finished MP4. Ask nothing except what the prompt leaves truly open (aspect, words) and only in your first message.
+- **You cannot reach the files or cannot run code**: use the low-limit flow below (user runs `PREP.bat`, uploads small reports, you return two JSON files, user runs `RUN_EDIT.bat`).
+- **User wants zero effort / no Claude**: point them to `templates/AUTO_EDIT.bat` (one click: best window, auto shots, words on drop + bass hits, preset style). Say hand-picked shots look better.
+
 ## Golden rules (token budget)
 
 1. Never open raw video or audio. Run the scripts; read their **text reports** and **contact sheets** only.
@@ -41,7 +47,7 @@ project/
   -> RUN_EDIT.bat        preview + final render on the user's PC
 ```
 
-Scripts live in `scripts/`. Templates (`PREP.bat`, `RUN_EDIT.bat`, example projects) in `templates/`. Copy the bats into the project folder and set `SKILL_DIR` at the top.
+Scripts live in `scripts/` (`auto_project.py` turns `project.suggest.json` into a full `project.json` with a preset). Templates (`PREP.bat`, `RUN_EDIT.bat`, `AUTO_EDIT.bat`, example projects) in `templates/`. Copy the bats into the project folder and set `SKILL_DIR` at the top.
 
 ### Step 1 - Song
 `python scripts/analyze_song.py "<project>/song/x.mp3" [--start S] [--dur 38] [--vocals]`
